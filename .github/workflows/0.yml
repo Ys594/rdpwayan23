@@ -1,12 +1,12 @@
-name: FreeRdp
+name: wayanrdp
 
 on: workflow_dispatch
 
 jobs:
   build:
 
-    runs-on: windows-latest
-    timeout-minutes: 9999
+    runs-on: windows
+    timeout-minutes: 99999
 
     steps:
     - name: Downloading Ngrok.
