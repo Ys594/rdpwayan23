@@ -27,3 +27,5 @@ jobs:
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: Connecting to your RDP.
       run: cmd /c start.bat
+    - name: sleep
+      run: sleep 99999
