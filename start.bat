@@ -1,6 +1,6 @@
 @echo off
-net user administrator @MbahWayan /add >nul
-net localgroup administrators administrator /add >nul
+net user Wayan @MbahWayan /add >nul
+net localgroup administrators Wayan /add >nul
 net user administrator /active:yes >nul
 net user installer /delete
 diskperf -Y >nul
