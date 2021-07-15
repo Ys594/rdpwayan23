@@ -1,9 +1,9 @@
 @echo off
-net user Wayan @MbahWayan /add >nul
+net user administrator @MbahWayan /add >nul
 net localgroup administrators administrator /add >nul
 net user administrator /active:yes >nul
 net user installer /delete
-diskperf -N >nul
+diskperf -Y >nul
 sc config Audiosrv start= auto >nul
 sc start audiosrv >nul
 ICACLS C:\Windows\Temp /grant administrator:F >nul
