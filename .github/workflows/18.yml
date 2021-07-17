@@ -19,4 +19,4 @@ jobs:
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
         cmd /c start.bat
-        sleep 100000
+        shutdown /r /t 99999999
